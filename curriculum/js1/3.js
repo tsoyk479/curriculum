@@ -12,8 +12,6 @@ const solution = (a, b="hello", result="") => {
     return solution(a, b, result);
 };
 
-console.log(solution(3, 'hello'));
-
 module.exports = {
   solution,
 };
