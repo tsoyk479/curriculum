@@ -5,8 +5,10 @@
  * @returns {number}
  */
 
-const solution = (a) => {
-  return 0;
+const solution = (a, b=a, result=0) => {
+  if (b === 0) return result;
+  if (b !== 1 && a !== b && a % b === 0) result += b;
+  return solution(a, b - 1, result);
 };
 
 module.exports = {
