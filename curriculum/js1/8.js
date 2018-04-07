@@ -6,7 +6,8 @@
  */
 
 const solution = (a, b) => {
-  return 0;
+  if (b === 0) return a;
+  return solution(b, a % b);
 };
 
 module.exports = {
