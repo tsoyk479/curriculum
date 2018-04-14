@@ -8,8 +8,7 @@
  */
 
 const solution = (a, b, c) => {
-    setTimeout(c, a);
-    setTimeout(c, a+b);
+    setTimeout(() => {c(); setTimeout(c, b);}, a);
 };
 
 module.exports = {
